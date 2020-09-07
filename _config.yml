@@ -2,3 +2,5 @@ theme: jekyll-theme-minimal
 logo: /assets/colin-pro-rnd2.png
 title: 200 Meters
 description: Colin Corbin Site
+show_downloads: false
+google_analytics:
