@@ -7,8 +7,8 @@ Colin Corbin is an executive with experience in client delivery, business develo
 <table>
   <tbody>
     <tr>
-      <td>![Accenture](/assets/acn-logo.png)</td>
-      <td>**Account Lead, Accenture Public Services** <br>Accenture<br>Working with clients to make a positive difference in the lives of their customers through strategy, innovative business approaches, and the application of technology.</td>
+      <td><a href="https://200meters.github.io/assets/acn-logo.png"></a></td>
+      <td><strong>Account Lead, Accenture Public Services</strong><br>Accenture<br>Working with clients to make a positive difference in the lives of their customers through strategy, innovative business approaches, and the application of technology.</td>
     </tr>
   </tbody>
 </table>
