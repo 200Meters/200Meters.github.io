@@ -17,6 +17,9 @@ Linc Kroeger, Founder, Knight Moves
 
 ### **What we do**
 - **Youth Readiness:** Work with schools to start students as early as 7th grade on a path to collegiate level STEM learning in high school. Support program members with training, and one on one mentoring through high school and through at least 12 months after job placement.
-- **Culture Dish:** A fully immersive experiential learning program at no charge to the individual, creating real world solutions to real world problems thereby bringing opportunities to life. Through this program, Knight Moves cultivates workforce and job readiness and placement for local employers. 
+
+- **Culture Dish:** A fully immersive experiential learning program at no charge to the individual, creating real world solutions to real world problems thereby bringing opportunities to life. Through this program, Knight Moves cultivates workforce and job readiness and placement for local employers.
+
 - **Technology for Non-profits:** Create technology and technical solutions for other tax-exempt organizations for free. 
+
 - **Incubate Entrepreneurs:** Foster entrepreneurialism and incubate startups to create local sources of innovation and value.
