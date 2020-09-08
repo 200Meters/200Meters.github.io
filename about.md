@@ -16,5 +16,9 @@ Assisting state and local government customers transform their business, empower
 ### **Northwest Region Delivery Executive, Accenture (Avanade)**
 ### <img src="/assets/ava-logo.jpg" height="15" width="15" alt="Accenture"> Accenture (Avanade)
 Leading the Northwest delivery portfolio to ensure clients achieve business outcomes. Incubating strategic accounts by operationalizing account management to increase consistency in the customer experience, lower project risk, and reduce the cost to serve clients.
+### **Delivery Director, Accenture (Avanade)**
 ### <img src="/assets/ava-logo.jpg" height="15" width="15" alt="Accenture"> Accenture (Avanade)
+Enabling the digital workplace at Fortune 100 companies across the US by delivering solutions built on collaboration, digital marketing, and analytics technologies.
+### **CIO**
+### <img src="/assets/wa-logo.png" height="15" width="15" alt="Accenture"> State of Washington
 Enabling the digital workplace at Fortune 100 companies across the US by delivering solutions built on collaboration, digital marketing, and analytics technologies.
