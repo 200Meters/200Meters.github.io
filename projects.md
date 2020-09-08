@@ -1,5 +1,5 @@
 ## Public Projects
-### **Scrum Practices**
+### **[Scrum Practices](https://github.com/200Meters/Scrum-Practices/wiki)**
 This project describes the use of Scrum and includes specific practices drawn from design thinking for managing Scrum Activities and events.
 * * *
 ### **Scale - Scrum for Sales**
