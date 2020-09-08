@@ -6,11 +6,7 @@
 Linc Kroeger, Founder, Knight Moves
 ### How might we...
 **Bridge the opportunity gap for rural and urban underserved communities** with market-leading educational and job opportunities in the communities where they live
- 
 **Transform mid-career workers at risk of displacement due to automation** to have the technology talent and workforce skills rivaling those of college graduates - without the burden of college debt
- 
 **Revitalize main street and urban centers** by curbing flight and providing high-paying local technology jobs
- 
 **Provide a diverse, top-tier technology workforce** to the world’s best and most innovative companies
- 
 **Help non-profits achieve their missions** with low cost or no cost technology solutions
