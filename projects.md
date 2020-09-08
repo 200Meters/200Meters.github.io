@@ -1,6 +1,6 @@
 ## Public Projects
 ### **[Scrum Practices](https://github.com/200Meters/Scrum-Practices/wiki)**
-![Scrum](https://github.com/200Meters/200Meters.github.io/blob/master/assets/daria-nepriakhina-zoCDWPuiRuA-unsplash.jpg)
+![Scrum](/assets/daria-nepriakhina-zoCDWPuiRuA-unsplash.jpg)
 
 This project describes the use of Scrum and includes specific practices drawn from design thinking for managing Scrum Activities and events.
 * * *
