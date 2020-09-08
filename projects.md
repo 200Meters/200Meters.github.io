@@ -6,6 +6,8 @@ This project describes the use of Scrum and includes specific practices drawn fr
 (<span>Photo by <a href="https://unsplash.com/@epicantus?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daria Nepriakhina</a> on <a href="https://unsplash.com/s/photos/agile?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>)
 * * *
 ### **Scale - Scrum for Sales**
+![Scale](/assets/team-sales-business-meeting.jpg)
+
 This project describes the use of Scrum to manage individual and team selling in order to achieve better sales results.
 * * *
 ### **Design Thinking Toolbox**
