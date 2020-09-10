@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post in the blog list
+title: Coming Soon
 date: 2020-09-07
 ---
-This is the first post in the site.
+Test record for blog posts
