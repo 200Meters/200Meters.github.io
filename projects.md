@@ -10,7 +10,7 @@ This project describes the use of Scrum and includes specific practices drawn fr
 
 This project describes the use of Scrum to manage individual and team selling in order to achieve better sales results.
 * * *
-### **Design Thinking Toolbox**
+### **[Design Thinking Toolbox](https://github.com/200Meters/DesignThinkingToolbox/wiki)**
 ![design-thinking](/assets/design.jpg)
 
 This project contains a toolbox of design thinking practices for innovation, business management, and product development
