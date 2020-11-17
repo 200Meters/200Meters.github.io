@@ -5,6 +5,7 @@
 This project contains files for the DrivenData DengAI competition implemented on Azure. This is a demonstration project to show how to use Azure ML to publish a data preparation and model publishing pipeline. It includes the end to end ML-ops process including dataset creation and management, model creation and registration (including a preview of explainability), pipeline publishing, and endpoint publishing. (Photo by Egor Kamelev from Pexels)
 * * *
 ### **[DengueAI Competition](https://github.com/200Meters/DengAI-Pub)**
+![DengueAI](/assets/DDMosquito.jpg)
 
 This project contains files for the DrivenData DengAI competition. This is a demonstration project to show how to use open source ML libraries such as scikit-learn, Pandas, Numpy,  Seaborn, Keras, and TensorFlow to perform exploratory data analysis and machine learning to predict cases of Dengue Fever. 
 * * *
