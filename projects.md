@@ -2,7 +2,7 @@
 ### **[DengueAI on Azure](https://github.com/200Meters/DengAI-AzureML)**
 ![DengueAI](/assets/mosquito-sm.jpg)
 
-This project contains files for the DrivenData DengAI competition implemented on Azure. This is a demonstration project to show how to use Azure ML to publish a data preparation and model publishing pipeline. It includes the end to end ML-ops process including dataset creation and management, model creation and registration (including a preview of explainability), pipeline publishing, and endpoint publishing.   
+This project contains files for the DrivenData DengAI competition implemented on Azure. This is a demonstration project to show how to use Azure ML to publish a data preparation and model publishing pipeline. It includes the end to end ML-ops process including dataset creation and management, model creation and registration (including a preview of explainability), pipeline publishing, and endpoint publishing. (Photo by Egor Kamelev from Pexels)
 * * *
 ### **[DengueAI Competition](https://github.com/200Meters/DengAI-Pub)**
 
