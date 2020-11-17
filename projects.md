@@ -1,4 +1,9 @@
 ## Public Projects
+### **[DengueAI Competition](https://github.com/200Meters/DengAI-Pub)**
+
+
+This project contains files for the DrivenData DengAI competition. This is a demonstration project to show how to use open source ML libraries such as scikit-learn, Pandas, Numpy,  Seaborn, Keras, and TensorFlow to perform exploratory data analysis and machine learning to predict cases of Dengue Fever. 
+* * *
 ### **[Scrum Practices](https://github.com/200Meters/Scrum-Practices/wiki)**
 ![Scrum](/assets/daria-nepriakhina-zoCDWPuiRuA-unsplash.jpg)
 
