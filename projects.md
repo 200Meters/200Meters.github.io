@@ -3,6 +3,7 @@
 ![TrumpTweet](/assets/trump-tweet-sketch.jpg)
 > **"Now they (almost all) sit back and watch me fight against a crooked and vicious foe, the radical left democrats. i will never forget!"**<br>
 > *-TrumpTweet Bot*
+
 <br>
 Irrespective of one's politics, America's 45th president is an avid and provocative user of Twitter - Tweeting almost 60,000 times as of January 2021! TrumpTweet is an artificial text generation demonstration project using TensorFlow and Keras to model Trump's past tweets and generate new tweets in response to current news headlines. 
 
