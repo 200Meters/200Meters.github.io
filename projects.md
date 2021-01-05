@@ -6,6 +6,7 @@
 
 <br>
 Irrespective of one's politics, America's 45th president is an avid and provocative user of Twitter - Tweeting almost 60,000 times as of January 2021! TrumpTweet is an artificial text generation demonstration project using TensorFlow and Keras to model Trump's past tweets and generate new tweets in response to current news headlines. 
+* * *
 
 ### **[DengueAI on Azure](https://github.com/200Meters/DengAI-AzureML)**
 ![DengueAI](/assets/mosquito-sm.jpg)
