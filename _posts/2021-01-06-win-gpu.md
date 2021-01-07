@@ -32,5 +32,5 @@ For the purpose of this article, we'll be setting up a machine capable of runnin
 - [cuDNN Archive](https://developer.nvidia.com/rdp/cudnn-archive) (lists which cuDNN supports which CUDA, and provides a download link)
 
 ### Create a Data Science Machine in Azure
-Azure makes it very easy to provision VM's, and they even have data science machines pre-configured with much of the software you would want to use. The trick with getting TensorFlow 2.3.0 support on an Azure VM is making sure that you select the right machine in order to use the GPU processors available. Note also that not all machines are available in all regions and the prices vary between regions. 
+Azure makes it very easy to provision VM's, and they even have data science machines pre-configured with much of the software you would want to use. The trick with getting TensorFlow 2.3.0 support on an Azure VM is making sure that you select the right machine in order to use the GPU processors available. Note also that not all machines are available in all regions and the prices vary between regions. In order to provision the vm
 
