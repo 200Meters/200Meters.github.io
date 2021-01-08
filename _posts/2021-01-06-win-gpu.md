@@ -64,7 +64,7 @@ The DSVM will come with Jupyter Notebook installed. I've moved eveerything to Ju
 `
 conda activate <environment_name>
 conda install -c conda-forge jupyterlab
-`
+`<br>
 To run JupyterLab you can either launch it from Anaconda Navigator or open a conda prompt and type:
 
 `jupyter lab`
