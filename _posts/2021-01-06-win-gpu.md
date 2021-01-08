@@ -15,17 +15,17 @@ Setting up a GPU machine in Azure to support TensorFlow has the following overal
 1. Confirm required hardware and software
 2. Create a data science VM in Azure
 3. Confirm Visual Studio installation
-4. Install Anaconda
-5. Install JupyterLab
-6. Install NVIDIA CUDA Toolkit and cuDNN
-7. Confirm CUDA and cuDNN operation
-8. Test for GPU support in JupyterLab
+4. Install NVIDIA CUDA Toolkit and cuDNN
+5. Install Anaconda and Create Environment
+6. Install JupyterLab
+7. Install TensorFlow
+8. Verify GPU support
 
 ### Confirm required hardware and software
 For the purpose of this article, we'll be setting up a machine capable of running TF 2.4.0 on GPU hardware. As a first step, determine the required hardware and software to do this. 
 
 1. **GPU hardware:** In order to use the GPU with TF, you'll need to select a VM with the right GPU hardware to run Nvidia's DNN tools (CUDA and cuDNN). It should be noted that Nvidia's tools will not run on the least expensive Azure VM's that have a GPU. As such, you'll need to find a VM with the right GPU hardware. As of the time of this article, you can visit this [Nvidia page](https://developer.nvidia.com/cuda-gpus) to see which GPU's will work. Keep this page handy when selecting a VM. 
-2. **VM type:** Azure offers many different VM's depending on the anticipated workload. A full list can be found on the [VM page](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes) and pricing can be found on the [vm pricing page](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/). For GPU VM's suitable for deep learning, you'll want to look at the N family. Based on the requirements of Nvidia, the smallest VM (with a single GPU) Standard NC6. In my case this was about $916/mo or about $1.31/hr. Based on my subscription, I needed to request a quota increase in order to provision the machine. Build some extra time in for the quota increase request and approval if you will also need an increase. In my case it took about 8 hours to get the increase approved.
+2. **VM type:** Azure offers many different VM's depending on the anticipated workload. A full list can be found on the [VM page](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes) and pricing can be found on the [vm pricing page](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/). For GPU VM's suitable for deep learning, you'll want to look at the N family. Based on the requirements of Nvidia, the smallest VM (with a single GPU) Standard NC6. In my case this was about $916/mo (including Windows license) or about $1.31/hr. Based on my subscription, I needed to request a quota increase in order to provision the machine. Build some extra time in for the quota increase request and approval if you will also need an increase. In my case it took about 8 hours to get the increase approved.
 3. **CUDA/cuDNN Version**: Tensorflow has specific requirements for the version of CUDA/cuDNN in order to run on a GPU. When TF releases a version it's typically not to the most recent version of CUDA/cuDNN so make sure you take the time to figure out the right versions. In my case, I was installing TF 2.4.0 which required CUDA Toolkit 11.0. CUDA 11.0 required cuDNN 8.0.4. to find these requirements, use the following links:
 - [TensorFlow CUDA requirements](https://www.tensorflow.org/install/gpu#software_requirements)
 - [CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive)
@@ -109,7 +109,7 @@ This will give you the details of the GPU such as model, driver version, and the
 To verify whether or not the GPU is available to TensorFlow you can run the following in the Jupyter notebook:
 
 ```
-import TensorFlow as TF
+import TensorFlow as tf
 tf.config.list_physical_devices('GPU')
 ```
 
