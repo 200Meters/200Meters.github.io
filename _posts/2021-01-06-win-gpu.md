@@ -56,7 +56,9 @@ The DSVM's do come with Python and miniconda. I like to have Anaconda available 
 
 Once Anaconda is installed you can create an environment for your TensorFlow GPU experiments. Creating an environment can be done either  from Navigator using the gui or by opening the conda prompt and typing:
 
-`conda create <environment_name>`
+```
+conda create <environment_name>
+```
 
 ### Install Jupyter Lab
 The DSVM will come with Jupyter Notebook installed. I've moved eveerything to JupyterLab quite sometime ago, so  JupyterLab has to be installed separately. If you downloaded Anaconda Navigator you can use the gui front end to install JupyterLab or you can install via the command line with the following:
@@ -67,7 +69,9 @@ conda install -c conda-forge jupyterlab
 ```
 To run JupyterLab you can either launch it from Anaconda Navigator or open a conda prompt and type:
 
-`jupyter lab`
+```
+jupyter lab
+```
 
 Jupyter Lab will then launch in your default browser.
 
