@@ -51,17 +51,24 @@ Once the machine has been provisioned, you can go ahead and log into it via RDP.
 ### Confirm Visual Studio Installation
 By starting with a data science vm, you'll have visual studio community edition installed. The CUDA toolkit and cuDNN rely on Visual Studio for some of the run time components so VS is needed. You will also use VS to verify the GPU operation. This isa good time to check if there are any VS updates and install them if there are. Finally, the DSVM's do come with CUDA and cuDNN already installed and configured. As of this writing, it came with version 10.1 of the CUDA toolkit. If you are are going to upgrade to 11.0 for TF 2.3.0, then you will want to uninstall the CUDA toolkit and cuDNN at this time so there are no conflicts later. Use the standard Windows Settings>Apps to uninstall them.
 
+### Install CUDA and cuDNN
+In order to take advantage of the GPU's you'll need to install the CUDA Toolkit and CUDNN. In order to download the software, you'll need to go to [NVIDIA.com](https://www.nvidia.com) and create a free developer account. Once you have the account and have logged in, go to the [CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive) to download the CUDA toolkit, and go to the [cuDNN Archive](https://developer.nvidia.com/rdp/cudnn-archive) to get the cuDNN.
+
+- **CUDA Installation:** After downloading the CUDA Toolkit, go ahead and run the Windows install. For detailed instructions, visit the Windows installation page linked from the CUDA archive (in this case [Windows documentation for 11.0](https://docs.nvidia.com/cuda/archive/11.0/cuda-installation-guide-microsoft-windows/index.html)). The instructions are verbose, so I won't repeat them here. I will however point out that you'll need to compile and run a couple of applications in Visual Studio to confirm the installation.
+
+- **cuDNN Installation:** The CUDA toolkit relies on the cuDNN in order to operate. Once you have installed the CUDA toolkit, you'll need to install the cuDNN. The process of installing the cuDNN is a matter of extracting files from the cuDNN zip file download and copying them to the appropriate location in the CUDA installation. Again, NVIDIA provides the details in the [cuDNN install guide for Windows ](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installwindows) so I won't repeat them here, but it is worth noting the you will want to make sure you copy the files to the right location and that the correct environment variables are set on your Windows machine. Again, see the documentation, but take note of these two steps in particular. In order to check the system variables, run sysdm.cpl, click the advanced tab, and then click on 'Environment Variables...' to see the variables. Again, the NVIDIA documentation specifies the correct variable values.
+
 ### Install Anaconda and Create Environment
 The DSVM's do come with Python and miniconda. I like to have Anaconda available for environment management. If you would like to have Anaconda installed, go to [Anaconda Individual Site](https://www.anaconda.com/products/individual) to download and install the Windows version.
 
 Once Anaconda is installed you can create an environment for your TensorFlow GPU experiments. Creating an environment can be done either  from Navigator using the gui or by opening the conda prompt and typing:
 
 ```
-conda create <environment_name>
+conda create <environment_name> python=<python_version>
 ```
 
 ### Install Jupyter Lab
-The DSVM will come with Jupyter Notebook installed. I've moved eveerything to JupyterLab quite sometime ago, so  JupyterLab has to be installed separately. If you downloaded Anaconda Navigator you can use the gui front end to install JupyterLab or you can install via the command line with the following:
+The DSVM will come with Jupyter Notebook installed. I've moved everything to JupyterLab quite sometime ago, so  JupyterLab has to be installed separately. If you downloaded Anaconda Navigator you can use the GUI front end to install JupyterLab or you can install via the command line with the following:
 
 ```
 conda activate <environment_name>
@@ -75,12 +82,40 @@ jupyter lab
 
 Jupyter Lab will then launch in your default browser.
 
-### Install CUDA and cuDNN
-In order to take advantage of the GPU's you'll need to install the CUDA Toolkit and CUDNN. In order to download the software, you'll need to go to [NVIDIA.com](https://www.nvidia.com) and create a free developer account. Once you have the account and have logged in, go to the [CUDA Toolkit Archive](https://developer.nvidia.com/cuda-toolkit-archive) to download the CUDA toolkit, and go to the [cuDNN Archive](https://developer.nvidia.com/rdp/cudnn-archive) to get the cuDNN.
+### Install TensorFlow
+TensorFlow provides details on their [install page](https://www.tensorflow.org/install/pip) for various Linux and Windows environments. Installation is straightforward, but there are a couple things to note. First, if using pip as the environment manager, you need version >=19.0. You can verify your pip environment and upgrade it using the following:
 
-- **CUDA Installation:** After downloading the CUDA Toolkit, go ahead and run the Windows install. For detailed instructions, visit the Windows installation page linked from the CUDA archive (in this case [Windows documentation for 11.0](https://docs.nvidia.com/cuda/archive/11.0/cuda-installation-guide-microsoft-windows/index.html)). The instructions are verbose, so I won't repeat them here. I will however point out that you'll need to compile and run a couple of applications in Visual Studio to confirm the installation.
+```
+pip3 version
+pip install --upgrade pip
+```
 
-- **cuDNN Installation:** The CUDA toolkit relies on the cuDNN in order to operate. Once you have installed the CUDA toolkit, you'll need to install the cuDNN. The process of installing the cuDNN is a matter of extracting files from the cuDNN zip file download and copying them to the appropriate location in the CUDA installation. Again, NVIDIA provides the details in the [cuDNN install guide for Windows ](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installwindows) so I won't repeat them here, but it is worth noting the you will want to make sure you copy the files to the right location and that the correct environment variables are set on your Windows machine. Again, see the documentation, but take note of these two steps in particular.
+For the TensorFlow installation, simply use pip in the environment where you want TensorFlow:
+
+```
+pip install --upgrade tensorflow
+```
+
+Note that TensorFlow used to provide a GPU version and CPU version. Both can now be installed by installing TensorFlow. Separate installs are not needed. 
+
+### Verify GPU Support
+There are a few different ways you can verify GPU support for your TensorFlow workloads. The first step is to take a look at the NVIDIA stats by opening a Windows command prompt and entering:
+
+```
+NVIDIA-smi
+```
+This will give you the details of the GPU such as model, driver version, and the max CUDA version supported.
+
+To verify whether or not the GPU is available to TensorFlow you can run the following in the Jupyter notebook:
+
+```
+import TensorFlow as TF
+tf.config.list_physical_devices('GPU')
+```
+
+A list of the GPU's will be returned if they are available. If there are no available GPU's or TF cannot see them, a blank list will be returned. 
+
+A final note on verifying the GPU being used by TensorFlow. Certain models like the tf.keras RNN models require certain model configurations in order to use the GPU during training. Make sure you understand what the GPU-enabled models are and that they are configured properly for GPU support if you want to get the performance advantage of the GPU.
 
 
 
