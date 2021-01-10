@@ -46,7 +46,7 @@ Azure makes it very easy to provision VM's, and they even have data science mach
 - Click next and add desired tags.
 - Click next to review and create
 
-<img src="https://github.com/200Meters/200Meters.github.io/blob/master/assets/vm-add-nc.jpg">
+<img src="https://github.com/200Meters/200Meters.github.io/blob/master/assets/vm-add-nc.jpg" alt="VM Add via Azure Portal">
 
 Once the machine has been provisioned, you can go ahead and log into it via RDP. Note again that if you do not have sufficient quota for an NC machine, you will need to ask for a quota increase before you can select the NC machine.
 
