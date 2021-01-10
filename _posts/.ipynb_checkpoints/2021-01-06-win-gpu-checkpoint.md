@@ -33,7 +33,7 @@ For the purpose of this article, we'll be setting up a machine capable of runnin
 4. **Python/Anaconda**: TensorFlow 2.4.0 requires Python versions 3.6-3.8. Install a Python version and environment manager to support your TF environment. 
 
 ### Create a Data Science Machine in Azure
-Azure makes it very easy to provision VM's, and they even have data science machines pre-configured with much of the software you would want to use. The trick with getting TensorFlow 2.3.0 support on an Azure VM is making sure that you select the right machine in order to use the GPU processors available. Note also that not all machines are available in all regions and the prices vary between regions. In order to provision the vm, perform the following steps using the  Azure Portal. Alternatively, you can provision the machine via script, but for a single machine, the portal is pretty easy.
+Azure makes it very easy to provision VM's, and they even have data science machines pre-configured with much of the software you would want to use. The trick with getting TensorFlow 2.4.0 support on an Azure VM is making sure that you select the right machine in order to use the GPU processors available. Note also that not all machines are available in all regions and the prices vary between regions. In order to provision the vm, perform the following steps using the  Azure Portal. Alternatively, you can provision the machine via script, but for a single machine, the portal is pretty easy.
 
 - Open the Azure portal and select 'Create resource'
 - Type in Data Science and select 'Data Science Virtual Machine - Windows 2019'
@@ -115,7 +115,7 @@ tf.config.list_physical_devices('GPU')
 
 A list of the GPU's will be returned if they are available. If there are no available GPU's or TF cannot see them, a blank list will be returned. 
 
-A final note on verifying the GPU being used by TensorFlow. Certain models like the tf.keras RNN models require certain model configurations in order to use the GPU during training. Make sure you understand what the GPU-enabled models are and that they are configured properly for GPU support if you want to get the performance advantage of the GPU.
+***A final note on verifying the GPU*** being used by TensorFlow. Certain models like the tf.keras RNN models require certain model configurations in order to use the GPU during training. Make sure you understand what the GPU-enabled models are and that they are configured properly for GPU support if you want to get the performance advantage of the GPU.
 
 
 
