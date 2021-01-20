@@ -1,2 +1,2 @@
 # Colin Corbin
-Contact me on [LinkedIn](https://www.linkedin.com/in/colincorbin/)
+Contact me via [LinkedIn](https://www.linkedin.com/in/colincorbin/)
